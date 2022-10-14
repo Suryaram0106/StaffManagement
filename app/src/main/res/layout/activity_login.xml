@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="50dp"
+        android:text="Login"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="100dp"
+        android:text="Signin to Continue"
+        android:textSize="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="190dp"
+        android:text="Email"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/edittxt_email_login"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="225dp"
+        android:background="@android:color/transparent"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@null"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginStart="55dp"
+        android:textSize="14dp"
+        android:layout_marginTop="270dp"/>
+
+    <EditText
+        android:id="@+id/edittxt_password_login"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="300dp"
+        android:background="@android:color/transparent"
+        android:hint="Enter Password"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@null"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/bg"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <TextView
+
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/transparent"
+        android:text="Dont have an account! click here to"
+        tools:ignore="MissingConstraints"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="400dp"
+         />
+
+    <TextView
+        android:id="@+id/txt_sign"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@color/transparent"
+        android:textColor="@color/purple_700"
+        android:linksClickable="true"
+        android:text="@string/signup"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>
